@@ -1,58 +1,78 @@
-.title {
+header {
   text-align: center;
+}
+
+header h1 {
   margin-bottom: 0.2em;
 }
 
-.subtitle {
-  text-align: center;
-  font-size: medium;
+header p {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+header h2 {
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 2.25rem;
 }
 
 body {
   line-height: 1.6;
-  font-size: 18px;
-  padding: 0 10px;
-  margin: 60px auto;
-  max-width: 700px;
+  font-size: 1.125rem;
+  padding: 0 0.625rem;
+  margin: 3.75rem auto;
+  max-width: 43.75rem;
+  color: #111;
+  background-color: #fff;
 }
 
-h2,
-h3 {
-  line-height: 1.2;
+main section + section {
+  margin-top: 1.5rem;
+}
+
+main h2 {
+  margin: 0 0 0.5rem;
+}
+
+main ul {
+  margin: 0;
+  padding-left: 1.4em;
+}
+
+main li + li {
+  margin-top: 0.35rem;
 }
 
 h2 {
+  line-height: 1.2;
   font-style: italic;
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.pr-count {
-  font-style: normal;
-  font-weight: normal;
-  color: #666;
+  font-size: 1.125rem;
 }
 
 a:link,
 a:visited {
   color: blue;
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 0.08em;
 }
 
-code,
-.code {
+a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
   line-height: 1.6;
   padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
   margin: 0;
   font-size: 85%;
   background-color: rgba(0, 0, 0, 0.04);
