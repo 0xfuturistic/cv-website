@@ -1,1 +1,1 @@
-Source for [diego.space](https://diego.space)
+Source for [diego.cv](https://diego.cv)

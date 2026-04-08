@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://diego.space/sitemap.xml
+Sitemap: https://diego.cv/sitemap.xml
