@@ -3,20 +3,22 @@ header {
 }
 
 header h1 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0;
 }
 
 header p {
-  margin-top: -0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.3rem;
   font-size: 1rem;
   color: #666;
 }
 
-header h2 {
-  font-weight: bold;
+header p.contact {
   margin-top: 0;
   margin-bottom: 2.25rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #111;
 }
 
 body {
@@ -33,10 +35,6 @@ main section + section {
   margin-top: 1.5rem;
 }
 
-main h2 {
-  margin: 0 0 0.5rem;
-}
-
 main ul {
   margin: 0;
   padding-left: 1.4em;
@@ -46,14 +44,14 @@ main li + li {
   margin-top: 0.35rem;
 }
 
-h2 {
+main h2 {
+  margin: 0 0 0.5rem;
   line-height: 1.2;
   font-style: italic;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
-a:link,
-a:visited {
+a {
   color: blue;
   text-underline-offset: 0.12em;
   text-decoration-thickness: 0.08em;
