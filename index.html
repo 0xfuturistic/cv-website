@@ -13,11 +13,11 @@
  <body>
   <header>
    <h1>diego estevez</h1>
-   <p>co-founder of <a href="https://divine.inc">divine</a> (<a href="https://careers.divine.inc">we're hiring</a>)</p>
+   <p>co-founder at <a href="https://divine.inc">divine</a> (<a href="https://careers.divine.inc">we're hiring</a>)</p>
    <p class="contact">
     find me on
-    <a href="https://x.com/0xfuturistic">x/twitter</a>
-    or
+    <a href="https://x.com/0xfuturistic">x</a>
+    and
     <a href="https://github.com/0xfuturistic">github</a>
    </p>
   </header>
@@ -26,31 +26,31 @@
    <section>
     <h2>Research</h2>
     <ul>
-     <li><a href="https://writing.divine.inc/delegated-underwriting/">Unsecured Lending via Delegated Underwriting</a>: no collateral, no identity, no centralized underwriting. Existing users sponsor new borrowers by putting their own credit on the line, making fake accounts worthless by construction</li>
-     <li><a href="https://ethresear.ch/t/solo-liquid-staking-for-solo-validators/21157">SOLO: Liquid Staking for Solo Validators</a>: a solo validator on Ethereum needs 32 ETH today. SOLO reduces that to 1.25 ETH through a permissionless LST minted against the portion of stake that can't be lost to slashing</li>
-     <li><a href="https://ethresear.ch/t/zkuniswap-a-first-of-its-kind-zkamm/17709">zkUniswap</a>: offloads UniswapV3 swap computation to a zk co-processor with on-chain proof verification, and captures MEV by auctioning pool locks</li>
-     <li><a href="https://ethresear.ch/t/commitment-satisfaction-committees-an-in-protocol-solution-to-pepc/16685">Commitment-Satisfaction Committees</a>: solved Ethereum Foundation's open problem <a href="https://efdn.notion.site/RIG-Open-Problems-ROPs-c11382c213f949a4b89927ef4e962adf?p=69c5885d56f84cd19da56e515e773c24&pm=s">ROP-4</a>, an in-protocol mechanism where attester subcommittees enforce arbitrary proposer commitments under ePBS</li>
-     <li><a href="https://ethresear.ch/t/pepc-dvt-pepc-with-no-changes-to-the-consensus-protocol/16514">PEPC-DVT</a>: proposer commitments enforced through distributed validator technology, with no changes to Ethereum consensus. One of the first out-of-protocol PEPC solutions</li>
-     <li><a href="https://ethresear.ch/t/making-pepc-dvt-private-with-bls-blinded-multi-signatures/17153">Making PEPC-DVT private</a>: BLS blinded multi-signatures let the DVT network sign blocks without seeing their contents, enabling a PEPCified MEV-boost</li>
-     <li><a href="https://ioinformatics.org/journal/v14_2020_47_60.pdf">Consensus Algorithms for Blockchains</a>: peer-reviewed survey of PoW, PoS, and DPoS with a from-scratch implementation, published in Olympiads in Informatics</li>
+     <li><a href="https://writing.divine.inc/delegated-underwriting/">Unsecured Lending via Delegated Underwriting</a>: no collateral, identity checks, or centralized underwriting. Existing users sponsor new borrowers by putting their own credit at risk, which makes sybil accounts economically useless</li>
+     <li><a href="https://ethresear.ch/t/solo-liquid-staking-for-solo-validators/21157">SOLO: Liquid Staking for Solo Validators</a>: solo Ethereum validators need 32 ETH today. SOLO lowers that to 1.25 ETH with a permissionless LST minted against stake that cannot be slashed</li>
+     <li><a href="https://ethresear.ch/t/zkuniswap-a-first-of-its-kind-zkamm/17709">zkUniswap</a>: offloads Uniswap V3 swap computation to a zk co-processor, verifies proofs on-chain, and captures MEV through pool-lock auctions</li>
+     <li><a href="https://ethresear.ch/t/commitment-satisfaction-committees-an-in-protocol-solution-to-pepc/16685">Commitment-Satisfaction Committees</a>: solution to Ethereum Foundation open problem <a href="https://efdn.notion.site/RIG-Open-Problems-ROPs-c11382c213f949a4b89927ef4e962adf?p=69c5885d56f84cd19da56e515e773c24&pm=s">ROP-4</a>, introducing an in-protocol mechanism where attester subcommittees enforce arbitrary proposer commitments under ePBS</li>
+     <li><a href="https://ethresear.ch/t/pepc-dvt-pepc-with-no-changes-to-the-consensus-protocol/16514">PEPC-DVT</a>: enforces proposer commitments through distributed validator technology with no Ethereum consensus changes; one of the earliest out-of-protocol PEPC designs</li>
+     <li><a href="https://ethresear.ch/t/making-pepc-dvt-private-with-bls-blinded-multi-signatures/17153">Making PEPC-DVT private</a>: uses BLS blinded multi-signatures so the DVT network can sign blocks without seeing contents, enabling a PEPC-style MEV-Boost</li>
+     <li><a href="https://ioinformatics.org/journal/v14_2020_47_60.pdf">Consensus Algorithms for Blockchains</a>: peer-reviewed survey of PoW, PoS, and DPoS, plus a from-scratch implementation, published in Olympiads in Informatics</li>
     </ul>
    </section>
 
    <section>
     <h2>Open Source</h2>
     <ul>
-     <li><a href="https://github.com/ethereum-optimism/optimism"><code>optimism</code></a>: core contributions to OP Stack smart contracts and node software. Led <a href="https://gov.optimism.io/t/upgrade-proposal-6-multi-chain-prep-mcp-l1/7677">Upgrade #6 (MCP L1)</a>, enabling atomic cross-chain contract upgrades across the Superchain</li>
-     <li><a href="https://github.com/0xfuturistic/sandwich-mitigating-uniswap-v2"><code>sandwich-mitigating-uniswap-v2</code></a>: UniswapV2 fork enforcing the Greedy Sequencing Rule, making sandwich attacks unprofitable</li>
-     <li><a href="https://github.com/0xfuturistic/emily"><code>emily</code></a>: generic protocol for credible commitments in the EVM, the reference implementation used across PEPC research, with ERC4337 and ERC6551 integrations</li>
-     <li><a href="https://github.com/0xfuturistic/zkUniswap"><code>zkUniswap</code></a>: UniswapV3 fork offloading swap computation to RISC Zero zk co-processor with on-chain proof verification</li>
-     <li><a href="https://github.com/0xfuturistic/sequencer-commitments"><code>sequencer-commitments</code></a>: OP Stack hack enabling programmatic commitments for L2 sequencers</li>
-     <li><a href="https://github.com/0xfuturistic/mev-tax"><code>mev-tax</code></a>: Solidity library implementing priority-fee-based MEV taxes</li>
+     <li><a href="https://github.com/ethereum-optimism/optimism"><code>optimism</code></a>: core contributions to OP Stack contracts and node software. Led <a href="https://gov.optimism.io/t/upgrade-proposal-6-multi-chain-prep-mcp-l1/7677">Upgrade #6 (MCP L1)</a>, which enabled atomic cross-chain contract upgrades across the Superchain</li>
+     <li><a href="https://github.com/0xfuturistic/sandwich-mitigating-uniswap-v2"><code>sandwich-mitigating-uniswap-v2</code></a>: Uniswap V2 fork that enforces the Greedy Sequencing Rule to make sandwich attacks unprofitable</li>
+     <li><a href="https://github.com/0xfuturistic/emily"><code>emily</code></a>: generic EVM protocol for credible commitments; reference implementation used across PEPC research, with ERC-4337 and ERC-6551 integrations</li>
+     <li><a href="https://github.com/0xfuturistic/zkUniswap"><code>zkUniswap</code></a>: Uniswap V3 fork that offloads swap computation to a RISC Zero zk co-processor with on-chain proof verification</li>
+     <li><a href="https://github.com/0xfuturistic/sequencer-commitments"><code>sequencer-commitments</code></a>: OP Stack prototype enabling programmatic commitments for L2 sequencers</li>
+     <li><a href="https://github.com/0xfuturistic/mev-tax"><code>mev-tax</code></a>: Solidity library for priority-fee-based MEV taxes</li>
      <li><a href="https://github.com/ethereum-optimism/transience"><code>transience</code></a>: Solidity library for reentrancy-aware transient storage</li>
-     <li><a href="https://github.com/0xfuturistic/MultiStaker"><code>multistaker</code></a>: protocol for staking across protocols and chains from a single contract, with L1-L2 reward distribution</li>
-     <li><a href="https://github.com/cairoeth/restaking"><code>restaking.wtf</code></a>: protocol for restaking any ERC20 to validate on-chain trust networks</li>
-     <li><a href="https://github.com/0xfuturistic/prime-field-arithmetic"><code>prime-field-arithmetic</code></a>: Solidity implementation of secp256k1 field arithmetic</li>
-     <li><a href="https://github.com/GradientFinance/quark"><code>quark</code></a>: cash-settled NFT derivatives with on-chain pricing, no oracles needed</li>
-     <li><a href="https://github.com/0xfuturistic/newsfact"><code>newsfact</code></a>: protocol for fact-checking news using market incentives</li>
+     <li><a href="https://github.com/0xfuturistic/MultiStaker"><code>multistaker</code></a>: protocol for staking across chains and protocols from one contract, including L1-L2 reward distribution</li>
+     <li><a href="https://github.com/cairoeth/restaking"><code>restaking.wtf</code></a>: protocol for restaking any ERC-20 to validate on-chain trust networks</li>
+     <li><a href="https://github.com/0xfuturistic/prime-field-arithmetic"><code>prime-field-arithmetic</code></a>: Solidity implementation of secp256k1 finite-field arithmetic</li>
+     <li><a href="https://github.com/GradientFinance/quark"><code>quark</code></a>: cash-settled NFT derivatives with on-chain pricing and no oracle dependency</li>
+     <li><a href="https://github.com/0xfuturistic/newsfact"><code>newsfact</code></a>: protocol for market-based news fact-checking</li>
     </ul>
    </section>
 
@@ -66,8 +66,8 @@
    <section>
     <h2>Education</h2>
     <ul>
-      <li>University of Waterloo: Bachelor of Honours Mathematics, Mathematical Physics (on-leave)</li>
-      <li>Harvard University: computer science and mathematics coursework</li>
+      <li>University of Waterloo: Bachelor of Honours Mathematics in Mathematical Physics (on leave)</li>
+      <li>Harvard University: coursework in computer science and mathematics</li>
     </ul>
    </section>
   </main>
