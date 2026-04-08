@@ -26,10 +26,10 @@
    <section>
     <h2>Research</h2>
     <ul>
-     <li><a href="https://divine.inc/research/unsecured-lending-delegated-underwriting">Unsecured Lending via Delegated Underwriting</a>: no collateral, no identity, no centralized underwriting. Sponsors stake their own credit on borrowers they trust, making fake accounts worthless by construction</li>
-     <li><a href="https://ethresear.ch/t/solo-liquid-staking-for-solo-validators/21157">SOLO: Liquid Staking for Solo Validators</a>: a solo validator needs 32 ETH today. SOLO reduces that to 1.25 ETH through a permissionless LST minted against the portion of stake that can't be lost to slashing</li>
-     <li><a href="https://ethresear.ch/t/zkuniswap-a-first-of-its-kind-zkamm/17709">zkUniswap</a>: the first zkAMM &mdash; offloads UniswapV3 swap computation to a zk co-processor with on-chain proof verification, and captures MEV by auctioning pool locks</li>
-     <li><a href="https://ethresear.ch/t/commitment-satisfaction-committees-an-in-protocol-solution-to-pepc/16685">Commitment-Satisfaction Committees</a>: solved Ethereum Foundation open problem ROP-4 &mdash; an in-protocol mechanism where attester subcommittees enforce arbitrary proposer commitments under ePBS</li>
+     <li><a href="https://writing.divine.inc/delegated-underwriting/">Unsecured Lending via Delegated Underwriting</a>: no collateral, no identity, no centralized underwriting. Existing users sponsor new borrowers by putting their own credit on the line, making fake accounts worthless by construction</li>
+     <li><a href="https://ethresear.ch/t/solo-liquid-staking-for-solo-validators/21157">SOLO: Liquid Staking for Solo Validators</a>: a solo validator on Ethereum needs 32 ETH today. SOLO reduces that to 1.25 ETH through a permissionless LST minted against the portion of stake that can't be lost to slashing</li>
+     <li><a href="https://ethresear.ch/t/zkuniswap-a-first-of-its-kind-zkamm/17709">zkUniswap</a>: offloads UniswapV3 swap computation to a zk co-processor with on-chain proof verification, and captures MEV by auctioning pool locks</li>
+     <li><a href="https://ethresear.ch/t/commitment-satisfaction-committees-an-in-protocol-solution-to-pepc/16685">Commitment-Satisfaction Committees</a>: solved Ethereum Foundation's open problem <a href="https://efdn.notion.site/RIG-Open-Problems-ROPs-c11382c213f949a4b89927ef4e962adf?p=69c5885d56f84cd19da56e515e773c24&pm=s">ROP-4</a>, an in-protocol mechanism where attester subcommittees enforce arbitrary proposer commitments under ePBS</li>
      <li><a href="https://ethresear.ch/t/pepc-dvt-pepc-with-no-changes-to-the-consensus-protocol/16514">PEPC-DVT</a>: proposer commitments enforced through distributed validator technology, with no changes to Ethereum consensus. One of the first out-of-protocol PEPC solutions</li>
      <li><a href="https://ethresear.ch/t/making-pepc-dvt-private-with-bls-blinded-multi-signatures/17153">Making PEPC-DVT private</a>: BLS blinded multi-signatures let the DVT network sign blocks without seeing their contents, enabling a PEPCified MEV-boost</li>
      <li><a href="https://ioinformatics.org/journal/v14_2020_47_60.pdf">Consensus Algorithms for Blockchains</a>: peer-reviewed survey of PoW, PoS, and DPoS with a from-scratch implementation, published in Olympiads in Informatics</li>
@@ -39,16 +39,16 @@
    <section>
     <h2>Open Source</h2>
     <ul>
-     <li><a href="https://github.com/0xfuturistic/emily"><code>emily</code></a>: generic protocol for credible commitments in the EVM &mdash; the reference implementation used across PEPC research, with ERC4337 and ERC6551 integrations</li>
-     <li><a href="https://github.com/0xfuturistic/zkUniswap"><code>zkUniswap</code></a>: UniswapV3 fork with RISC Zero zk co-processor and on-chain Groth16 proof verification</li>
-     <li><a href="https://github.com/0xfuturistic/sequencer-commitments"><code>sequencer-commitments</code></a>: OP Stack hack introducing programmable commitments for L2 sequencers</li>
+     <li><a href="https://github.com/0xfuturistic/sandwich-mitigating-uniswap-v2"><code>sandwich-mitigating-uniswap-v2</code></a>: UniswapV2 fork enforcing the Greedy Sequencing Rule, making sandwich attacks unprofitable</li>
+     <li><a href="https://github.com/0xfuturistic/emily"><code>emily</code></a>: generic protocol for credible commitments in the EVM, the reference implementation used across PEPC research, with ERC4337 and ERC6551 integrations</li>
+     <li><a href="https://github.com/0xfuturistic/zkUniswap"><code>zkUniswap</code></a>: UniswapV3 fork offloading swap computation to RISC Zero zk co-processor with on-chain proof verification</li>
+     <li><a href="https://github.com/0xfuturistic/sequencer-commitments"><code>sequencer-commitments</code></a>: OP Stack hack enabling programmatic commitments for L2 sequencers</li>
      <li><a href="https://github.com/0xfuturistic/mev-tax"><code>mev-tax</code></a>: Solidity library implementing priority-fee-based MEV taxes</li>
-     <li><a href="https://github.com/ethereum-optimism/transience"><code>transience</code></a>: reentrancy-aware transient storage for Solidity (ethereum-optimism)</li>
-     <li><a href="https://github.com/0xfuturistic/sandwich-mitigating-uniswap-v2"><code>sandwich-mitigating-uniswap-v2</code></a>: O(1) enforcement of the Greedy Sequencing Rule, making sandwich attacks unprofitable</li>
+     <li><a href="https://github.com/ethereum-optimism/transience"><code>transience</code></a>: reentrancy-aware transient storage library for Solidity</li>
      <li><a href="https://github.com/0xfuturistic/MultiStaker"><code>multistaker</code></a>: stake across protocols and chains from a single contract, with L1-L2 reward distribution</li>
      <li><a href="https://github.com/0xfuturistic/prime-field-arithmetic"><code>prime-field-arithmetic</code></a>: secp256k1 field arithmetic in Solidity</li>
      <li><a href="https://github.com/GradientFinance/quark"><code>quark</code></a>: cash-settled NFT derivatives with on-chain pricing, no oracles</li>
-     <li><a href="https://github.com/0xfuturistic/plonkish-solidity"><code>plonkish-solidity</code></a>: verify halo2 circuits inside the EVM</li>
+     <li><a href="https://github.com/0xfuturistic/newsfact"><code>newsfact</code></a>: decentralized market for identifying fake news</li>
     </ul>
    </section>
 
